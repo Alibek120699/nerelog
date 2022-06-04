@@ -6,8 +6,8 @@ import { Application } from "./types";
 
 export const useApplications = (databaseSize: DatabaseSize = 2000) => {
   const {
-    data: applications,
-    error,
+    data: applications = [],
+    error = "No internet connection",
     isLoading,
     isError,
     isSuccess,

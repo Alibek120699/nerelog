@@ -6,8 +6,8 @@ import { DatabaseSize } from "store/types";
 
 export const useClients = (databaseSize: DatabaseSize = 2000) => {
   const {
-    data: clients,
-    error,
+    data: clients = [],
+    error = "No internet connection",
     isLoading,
     isError,
     isSuccess,

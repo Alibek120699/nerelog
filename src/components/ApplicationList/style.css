@@ -1,0 +1,22 @@
+.applications__container {
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 20px 30px;
+}
+
+@media (max-width: 768px) {
+  .applications__container--hidden {
+    display: none;
+  }
+}
+
+.applications__container__item {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.applications__container__item + .applications__container__item {
+  margin-top: 20px;
+}

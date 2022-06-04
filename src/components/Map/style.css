@@ -1,0 +1,18 @@
+.leaflet-container {
+  width: 50vw;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .leaflet-container {
+    width: 100vw;
+  }
+
+  .map__container--hidden {
+    display: none;
+  }
+}
+
+.markercluster-map {
+  height: 90vh;
+}
